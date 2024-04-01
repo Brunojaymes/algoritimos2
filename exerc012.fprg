@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bruno Jaymes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 08:19:57 "/>
+        <attribute name="created" value="QnJ1bm8gSmF5bWVzO0RFU0tUT1AtNFNPS0E2MjsyMDI0LTAyLTA1OyIwNzo0ODoxNSAiOzM0MDM="/>
+        <attribute name="edited" value="QnJ1bm8gSmF5bWVzO0RFU0tUT1AtNFNPS0E2MjsyMDI0LTAyLTA1OyIwODoxOTo1NyAiOzI7MzUxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <input variable="ano"/>
+            <declare name="lBissexto" type="Boolean" array="False" size=""/>
+            <assign variable="lBissexto" expression="ehbissexto(ano)"/>
+            <output expression="lBissexto" newline="True"/>
+        </body>
+    </function>
+    <function name="ehbissexto" type="Boolean" variable="resultado">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Boolean" array="False" size=""/>
+            <assign variable="resultado" expression="(ano % 4 == 0 &amp;&amp; ano % 100 != 0 )|| ano % 400 == 0"/>
+        </body>
+    </function>
+</flowgorithm>

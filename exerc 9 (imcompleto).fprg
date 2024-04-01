@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bruno Jaymes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 08:49:39 "/>
+        <attribute name="created" value="QnJ1bm8gSmF5bWVzO0RFU0tUT1AtNFNPS0E2MjsyMDI0LTAxLTMxOyIwNzo1MDoyNSAiOzMzOTU="/>
+        <attribute name="edited" value="QnJ1bm8gSmF5bWVzO0RFU0tUT1AtNFNPS0E2MjsyMDI0LTAxLTMxOyIwODo0OTozOSAiOzI7MzUxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, e, i" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="2"/>
+            <for variable="i" start="10" end="1" direction="dec" step="1">
+                <output expression="x  * i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
